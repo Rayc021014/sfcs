@@ -1,35 +1,215 @@
 @import './base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+. {
+  font-family: sans-serif;
+}
+:root {
+  --width: 47%;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+html {
+  background-color: white;
+  font-family: 'Circular Std', sans-serif;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.spotify-logo {
+  display: block;
+  margin: auto;
+  width: 9rem;
+  padding: 0.875rem 0;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+#first-line {
+  opacity: 0.5;
+  padding-top: 0;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.app-buttons {
+  margin: 10px auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 50px;
+  display: flex;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+button > span {
+  font-size: 0.875rem;
+}
+
+.icons {
+  width: 16px;
+}
+
+#facebook {
+  margin-top: 35px;
+  background-color: rgb(24, 119, 242);
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 500px;
+}
+
+#apple {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 500px;
+}
+
+#google {
+  background-color: white;
+  color: #6a6a6a;
+  border: 1px solid gray;
+  border-radius: 500px;
+}
+
+#facebook:hover {
+  border: 1px solid black;
+}
+
+#google:hover {
+  border: 1px solid black;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 440px;
+}
+
+#second,
+#third {
+  width: 400px;
+}
+
+#or {
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 16px;
+}
+
+.credentials {
+//background-color: lightpink;
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  margin: auto;
+
+  align-items: center;
+}
+
+#email-label {
+
+  width: 100%;
+  font-size: 14px;
+  padding: 4px 0;
+  font-weight: bold;
+}
+
+#email {
+  width: 435px;
+  padding: 12px 8px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+#password-label {
+  width: 100%;
+  font-size: 14px;
+  padding: 4px 0;
+  font-weight: bold;
+}
+
+#password {
+  width: 435px;
+  padding: 12px 8px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+#forgot {
+  width: 100%;
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+  padding: 15px 0;
+
+}
+
+#forgot:hover {
+  color: #169b45;
+}
+
+#remember {
+  font-size: 15px;
+}
+
+#remember-label {
+  background: #169b45;
+}
+
+.credentials ~ input:checked {
+  color: #169b45;
+}
+
+
+#log-in {
+  margin: 0 0 5px 80%;
+  background-color: #1ed760;
+  width: 90px;
+  height: 3rem;
+  border: none;
+  border-radius: 500px;
+  font-weight: bold;
+}
+
+#log-in:hover {
+  scale: 1.05;
+  background-color: #2be66c;
+}
+
+
+
+.footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#account {
+  text-align: center;
+  font-weight: 600;
+  padding: 16px;
+  font-size: 20px;
+}
+
+#footer-hr {
+  width: 450px;
+  margin: 20px auto;
+}
+
+#sign-up {
+
+  background-color: white;
+  width: 450px;
+  color: #6a6a6a;
+  font-weight: bold;
+  font-size: 15px;
+  height: 45px;
+  border: 1px solid gray;
+  border-radius: 500px;
+  letter-spacing: 0.1rem;
+}
+
+#sign-up:hover {
+  border: 1px solid black;
 }
